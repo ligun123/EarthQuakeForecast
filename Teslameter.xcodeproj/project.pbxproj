@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		28D7ACF80DDB3853001CB0EB /* TeslameterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* TeslameterViewController.m */; };
+		2B44A17411CA971200B24959 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B44A17311CA971200B24959 /* CoreGraphics.framework */; };
+		2B44A17611CA971200B24959 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B44A17511CA971200B24959 /* CoreLocation.framework */; };
+		2B44A17811CA971200B24959 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B44A17711CA971200B24959 /* Foundation.framework */; };
+		2B44A17A11CA971200B24959 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B44A17911CA971200B24959 /* UIKit.framework */; };
+		2B44A1A911CA996400B24959 /* TeslameterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B44A1A811CA996400B24959 /* TeslameterViewController.xib */; };
+		2B44A1AB11CA996F00B24959 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B44A1AA11CA996F00B24959 /* MainWindow.xib */; };
+		2B44A1EA11CA9A8400B24959 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B44A1E311CA9A8400B24959 /* Icon-72.png */; };
+		2B44A1EB11CA9A8400B24959 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B44A1E411CA9A8400B24959 /* Icon-Small-50.png */; };
+		2B44A1EC11CA9A8400B24959 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B44A1E511CA9A8400B24959 /* Icon-Small.png */; };
+		2B44A1ED11CA9A8400B24959 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B44A1E611CA9A8400B24959 /* Icon-Small@2x.png */; };
+		2B44A1EE11CA9A8400B24959 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B44A1E711CA9A8400B24959 /* Icon.png */; };
+		2B44A1EF11CA9A8400B24959 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B44A1E811CA9A8400B24959 /* Icon@2x.png */; };
+		2BA881B011D2D7B300419525 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 2BA881AF11D2D7B300419525 /* iTunesArtwork */; };
+		B27030C61725112F00729BA0 /* compassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27030C41725112F00729BA0 /* compassViewController.m */; };
+		B27030C71725112F00729BA0 /* compassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B27030C51725112F00729BA0 /* compassViewController.xib */; };
+		B27030CA17251B5A00729BA0 /* EarthWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = B27030C917251B5A00729BA0 /* EarthWaveView.m */; };
+		B27030CC17251EF500729BA0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27030CB17251EF500729BA0 /* QuartzCore.framework */; };
+		B282B6C717265C6400058556 /* EarthQuakeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B282B6C617265C6400058556 /* EarthQuakeManager.m */; };
+		B282B6C917266CDB00058556 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B282B6C817266CDB00058556 /* AudioToolbox.framework */; };
+		B2833D641727A067000CE101 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2833D631727A067000CE101 /* CoreMotion.framework */; };
+		B2B8CA481729442F00E870DA /* alert1.wav in Resources */ = {isa = PBXBuildFile; fileRef = B2B8CA411729442F00E870DA /* alert1.wav */; };
+		B2B8CA491729442F00E870DA /* alert2.wav in Resources */ = {isa = PBXBuildFile; fileRef = B2B8CA421729442F00E870DA /* alert2.wav */; };
+		B2B8CA4A1729442F00E870DA /* backEarth.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B8CA431729442F00E870DA /* backEarth.png */; };
+		B2B8CA4B1729442F00E870DA /* backEarth2.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B8CA441729442F00E870DA /* backEarth2.png */; };
+		B2B8CA4C1729442F00E870DA /* backWave.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B8CA451729442F00E870DA /* backWave.png */; };
+		B2B8CA4D1729442F00E870DA /* compass1.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B8CA461729442F00E870DA /* compass1.png */; };
+		B2B8CA4E1729442F00E870DA /* compass2.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B8CA471729442F00E870DA /* compass2.png */; };
+		CFC5A65B0FD3E1A3001B9CB3 /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC5A65A0FD3E1A3001B9CB3 /* GraphView.m */; };
+		CFF363450FD4816800BB1137 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF363440FD4816800BB1137 /* Background.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Teslameter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teslameter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28D7ACF60DDB3853001CB0EB /* TeslameterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeslameterViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* TeslameterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeslameterViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B44A17311CA971200B24959 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2B44A17511CA971200B24959 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2B44A17711CA971200B24959 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2B44A17911CA971200B24959 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2B44A1CB11CA99A600B24959 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Resources/en.lproj/TeslameterViewController.xib; sourceTree = "<group>"; };
+		2B44A1CC11CA99B500B24959 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Resources/en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		2B44A1E311CA9A8400B24959 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Resources/Icon-72.png"; sourceTree = "<group>"; };
+		2B44A1E411CA9A8400B24959 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "Resources/Icon-Small-50.png"; sourceTree = "<group>"; };
+		2B44A1E511CA9A8400B24959 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "Resources/Icon-Small.png"; sourceTree = "<group>"; };
+		2B44A1E611CA9A8400B24959 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "Resources/Icon-Small@2x.png"; sourceTree = "<group>"; };
+		2B44A1E711CA9A8400B24959 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Resources/Icon.png; sourceTree = "<group>"; };
+		2B44A1E811CA9A8400B24959 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Resources/Icon@2x.png"; sourceTree = "<group>"; };
+		2BA881AF11D2D7B300419525 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; name = iTunesArtwork; path = Resources/iTunesArtwork; sourceTree = "<group>"; };
+		30385B690FFC024D006C2CD2 /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Teslameter_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teslameter_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Teslameter-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Teslameter-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		B27030C31725112F00729BA0 /* compassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compassViewController.h; sourceTree = "<group>"; };
+		B27030C41725112F00729BA0 /* compassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = compassViewController.m; sourceTree = "<group>"; };
+		B27030C51725112F00729BA0 /* compassViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = compassViewController.xib; sourceTree = "<group>"; };
+		B27030C817251B5A00729BA0 /* EarthWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthWaveView.h; sourceTree = "<group>"; };
+		B27030C917251B5A00729BA0 /* EarthWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthWaveView.m; sourceTree = "<group>"; };
+		B27030CB17251EF500729BA0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B282B6C517265C6400058556 /* EarthQuakeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthQuakeManager.h; sourceTree = "<group>"; };
+		B282B6C617265C6400058556 /* EarthQuakeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthQuakeManager.m; sourceTree = "<group>"; };
+		B282B6C817266CDB00058556 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B2833D631727A067000CE101 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		B2B8CA411729442F00E870DA /* alert1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = alert1.wav; path = Resources/alert1.wav; sourceTree = "<group>"; };
+		B2B8CA421729442F00E870DA /* alert2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = alert2.wav; path = Resources/alert2.wav; sourceTree = "<group>"; };
+		B2B8CA431729442F00E870DA /* backEarth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backEarth.png; path = Resources/backEarth.png; sourceTree = "<group>"; };
+		B2B8CA441729442F00E870DA /* backEarth2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backEarth2.png; path = Resources/backEarth2.png; sourceTree = "<group>"; };
+		B2B8CA451729442F00E870DA /* backWave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backWave.png; path = Resources/backWave.png; sourceTree = "<group>"; };
+		B2B8CA461729442F00E870DA /* compass1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = compass1.png; path = Resources/compass1.png; sourceTree = "<group>"; };
+		B2B8CA471729442F00E870DA /* compass2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = compass2.png; path = Resources/compass2.png; sourceTree = "<group>"; };
+		CFC5A6590FD3E1A3001B9CB3 /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
+		CFC5A65A0FD3E1A3001B9CB3 /* GraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphView.m; sourceTree = "<group>"; };
+		CFF363440FD4816800BB1137 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Background.png; path = Resources/Background.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2833D641727A067000CE101 /* CoreMotion.framework in Frameworks */,
+				B282B6C917266CDB00058556 /* AudioToolbox.framework in Frameworks */,
+				B27030CC17251EF500729BA0 /* QuartzCore.framework in Frameworks */,
+				2B44A17411CA971200B24959 /* CoreGraphics.framework in Frameworks */,
+				2B44A17611CA971200B24959 /* CoreLocation.framework in Frameworks */,
+				2B44A17811CA971200B24959 /* Foundation.framework in Frameworks */,
+				2B44A17A11CA971200B24959 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+				2B44A1AA11CA996F00B24959 /* MainWindow.xib */,
+				28D7ACF60DDB3853001CB0EB /* TeslameterViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* TeslameterViewController.m */,
+				2B44A1A811CA996400B24959 /* TeslameterViewController.xib */,
+				CFC5A6590FD3E1A3001B9CB3 /* GraphView.h */,
+				CFC5A65A0FD3E1A3001B9CB3 /* GraphView.m */,
+				B27030C31725112F00729BA0 /* compassViewController.h */,
+				B27030C41725112F00729BA0 /* compassViewController.m */,
+				B27030C51725112F00729BA0 /* compassViewController.xib */,
+				B282B6C517265C6400058556 /* EarthQuakeManager.h */,
+				B282B6C617265C6400058556 /* EarthQuakeManager.m */,
+				B27030C817251B5A00729BA0 /* EarthWaveView.h */,
+				B27030C917251B5A00729BA0 /* EarthWaveView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Teslameter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				30385B690FFC024D006C2CD2 /* ReadMe.txt */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Teslameter_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B2B8CA411729442F00E870DA /* alert1.wav */,
+				B2B8CA421729442F00E870DA /* alert2.wav */,
+				B2B8CA431729442F00E870DA /* backEarth.png */,
+				B2B8CA441729442F00E870DA /* backEarth2.png */,
+				B2B8CA451729442F00E870DA /* backWave.png */,
+				B2B8CA461729442F00E870DA /* compass1.png */,
+				B2B8CA471729442F00E870DA /* compass2.png */,
+				2BA881AF11D2D7B300419525 /* iTunesArtwork */,
+				2B44A1E311CA9A8400B24959 /* Icon-72.png */,
+				2B44A1E411CA9A8400B24959 /* Icon-Small-50.png */,
+				2B44A1E511CA9A8400B24959 /* Icon-Small.png */,
+				2B44A1E611CA9A8400B24959 /* Icon-Small@2x.png */,
+				2B44A1E711CA9A8400B24959 /* Icon.png */,
+				2B44A1E811CA9A8400B24959 /* Icon@2x.png */,
+				CFF363440FD4816800BB1137 /* Background.png */,
+				8D1107310486CEB800E47090 /* Teslameter-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2833D631727A067000CE101 /* CoreMotion.framework */,
+				B282B6C817266CDB00058556 /* AudioToolbox.framework */,
+				B27030CB17251EF500729BA0 /* QuartzCore.framework */,
+				2B44A17311CA971200B24959 /* CoreGraphics.framework */,
+				2B44A17511CA971200B24959 /* CoreLocation.framework */,
+				2B44A17711CA971200B24959 /* Foundation.framework */,
+				2B44A17911CA971200B24959 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Teslameter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Teslameter" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Teslameter;
+			productName = Teslameter;
+			productReference = 1D6058910D05DD3D006BFB54 /* Teslameter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Teslameter" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Teslameter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B44A1AB11CA996F00B24959 /* MainWindow.xib in Resources */,
+				2B44A1A911CA996400B24959 /* TeslameterViewController.xib in Resources */,
+				CFF363450FD4816800BB1137 /* Background.png in Resources */,
+				2B44A1EA11CA9A8400B24959 /* Icon-72.png in Resources */,
+				2B44A1EB11CA9A8400B24959 /* Icon-Small-50.png in Resources */,
+				2B44A1EC11CA9A8400B24959 /* Icon-Small.png in Resources */,
+				2B44A1ED11CA9A8400B24959 /* Icon-Small@2x.png in Resources */,
+				2B44A1EE11CA9A8400B24959 /* Icon.png in Resources */,
+				2B44A1EF11CA9A8400B24959 /* Icon@2x.png in Resources */,
+				2BA881B011D2D7B300419525 /* iTunesArtwork in Resources */,
+				B27030C71725112F00729BA0 /* compassViewController.xib in Resources */,
+				B2B8CA481729442F00E870DA /* alert1.wav in Resources */,
+				B2B8CA491729442F00E870DA /* alert2.wav in Resources */,
+				B2B8CA4A1729442F00E870DA /* backEarth.png in Resources */,
+				B2B8CA4B1729442F00E870DA /* backEarth2.png in Resources */,
+				B2B8CA4C1729442F00E870DA /* backWave.png in Resources */,
+				B2B8CA4D1729442F00E870DA /* compass1.png in Resources */,
+				B2B8CA4E1729442F00E870DA /* compass2.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* TeslameterViewController.m in Sources */,
+				CFC5A65B0FD3E1A3001B9CB3 /* GraphView.m in Sources */,
+				B27030C61725112F00729BA0 /* compassViewController.m in Sources */,
+				B27030CA17251B5A00729BA0 /* EarthWaveView.m in Sources */,
+				B282B6C717265C6400058556 /* EarthQuakeManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2B44A1A811CA996400B24959 /* TeslameterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B44A1CB11CA99A600B24959 /* en */,
+			);
+			name = TeslameterViewController.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		2B44A1AA11CA996F00B24959 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B44A1CC11CA99B500B24959 /* en */,
+			);
+			name = MainWindow.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Teslameter_Prefix.pch;
+				INFOPLIST_FILE = "Teslameter-Info.plist";
+				PRODUCT_NAME = Teslameter;
+				VALID_ARCHS = "armv6 armv7";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Teslameter_Prefix.pch;
+				INFOPLIST_FILE = "Teslameter-Info.plist";
+				PRODUCT_NAME = Teslameter;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Teslameter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Teslameter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
