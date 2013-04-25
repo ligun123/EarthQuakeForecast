@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		23D7CB5F172961500004FF00 /* WaringMask.png in Resources */ = {isa = PBXBuildFile; fileRef = 23D7CB5E172961500004FF00 /* WaringMask.png */; };
+		23D7CB621729716F0004FF00 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23D7CB641729716F0004FF00 /* Localizable.strings */; };
+		23D7CB6D172973330004FF00 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23D7CB6B172973330004FF00 /* MainWindow.xib */; };
+		23D7CB6E172973330004FF00 /* TeslameterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23D7CB6C172973330004FF00 /* TeslameterViewController.xib */; };
 		28D7ACF80DDB3853001CB0EB /* TeslameterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* TeslameterViewController.m */; };
 		2B44A17411CA971200B24959 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B44A17311CA971200B24959 /* CoreGraphics.framework */; };
 		2B44A17611CA971200B24959 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B44A17511CA971200B24959 /* CoreLocation.framework */; };
 		2B44A17811CA971200B24959 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B44A17711CA971200B24959 /* Foundation.framework */; };
 		2B44A17A11CA971200B24959 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B44A17911CA971200B24959 /* UIKit.framework */; };
-		2B44A1A911CA996400B24959 /* TeslameterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B44A1A811CA996400B24959 /* TeslameterViewController.xib */; };
-		2B44A1AB11CA996F00B24959 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B44A1AA11CA996F00B24959 /* MainWindow.xib */; };
 		2B44A1EA11CA9A8400B24959 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B44A1E311CA9A8400B24959 /* Icon-72.png */; };
 		2B44A1EB11CA9A8400B24959 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B44A1E411CA9A8400B24959 /* Icon-Small-50.png */; };
 		2B44A1EC11CA9A8400B24959 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B44A1E511CA9A8400B24959 /* Icon-Small.png */; };
@@ -45,6 +47,11 @@
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* Teslameter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teslameter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23D7CB5E172961500004FF00 /* WaringMask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WaringMask.png; path = Resources/WaringMask.png; sourceTree = "<group>"; };
+		23D7CB65172971D60004FF00 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		23D7CB66172971F10004FF00 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		23D7CB6B172973330004FF00 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		23D7CB6C172973330004FF00 /* TeslameterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TeslameterViewController.xib; sourceTree = "<group>"; };
 		28D7ACF60DDB3853001CB0EB /* TeslameterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeslameterViewController.h; sourceTree = "<group>"; };
 		28D7ACF70DDB3853001CB0EB /* TeslameterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeslameterViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -52,8 +59,6 @@
 		2B44A17511CA971200B24959 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2B44A17711CA971200B24959 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2B44A17911CA971200B24959 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		2B44A1CB11CA99A600B24959 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Resources/en.lproj/TeslameterViewController.xib; sourceTree = "<group>"; };
-		2B44A1CC11CA99B500B24959 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Resources/en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		2B44A1E311CA9A8400B24959 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Resources/Icon-72.png"; sourceTree = "<group>"; };
 		2B44A1E411CA9A8400B24959 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "Resources/Icon-Small-50.png"; sourceTree = "<group>"; };
 		2B44A1E511CA9A8400B24959 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "Resources/Icon-Small.png"; sourceTree = "<group>"; };
@@ -109,10 +114,10 @@
 			children = (
 				1D3623240D0F684500981E51 /* AppDelegate.h */,
 				1D3623250D0F684500981E51 /* AppDelegate.m */,
-				2B44A1AA11CA996F00B24959 /* MainWindow.xib */,
+				23D7CB6B172973330004FF00 /* MainWindow.xib */,
 				28D7ACF60DDB3853001CB0EB /* TeslameterViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* TeslameterViewController.m */,
-				2B44A1A811CA996400B24959 /* TeslameterViewController.xib */,
+				23D7CB6C172973330004FF00 /* TeslameterViewController.xib */,
 				CFC5A6590FD3E1A3001B9CB3 /* GraphView.h */,
 				CFC5A65A0FD3E1A3001B9CB3 /* GraphView.m */,
 				B27030C31725112F00729BA0 /* compassViewController.h */,
@@ -159,6 +164,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				23D7CB5E172961500004FF00 /* WaringMask.png */,
 				B2B8CA411729442F00E870DA /* alert1.wav */,
 				B2B8CA421729442F00E870DA /* alert2.wav */,
 				B2B8CA431729442F00E870DA /* backEarth.png */,
@@ -175,6 +181,7 @@
 				2B44A1E811CA9A8400B24959 /* Icon@2x.png */,
 				CFF363440FD4816800BB1137 /* Background.png */,
 				8D1107310486CEB800E47090 /* Teslameter-Info.plist */,
+				23D7CB641729716F0004FF00 /* Localizable.strings */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -228,6 +235,7 @@
 				French,
 				German,
 				en,
+				"zh-Hans",
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
@@ -243,8 +251,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B44A1AB11CA996F00B24959 /* MainWindow.xib in Resources */,
-				2B44A1A911CA996400B24959 /* TeslameterViewController.xib in Resources */,
 				CFF363450FD4816800BB1137 /* Background.png in Resources */,
 				2B44A1EA11CA9A8400B24959 /* Icon-72.png in Resources */,
 				2B44A1EB11CA9A8400B24959 /* Icon-Small-50.png in Resources */,
@@ -261,6 +267,10 @@
 				B2B8CA4C1729442F00E870DA /* backWave.png in Resources */,
 				B2B8CA4D1729442F00E870DA /* compass1.png in Resources */,
 				B2B8CA4E1729442F00E870DA /* compass2.png in Resources */,
+				23D7CB5F172961500004FF00 /* WaringMask.png in Resources */,
+				23D7CB621729716F0004FF00 /* Localizable.strings in Resources */,
+				23D7CB6D172973330004FF00 /* MainWindow.xib in Resources */,
+				23D7CB6E172973330004FF00 /* TeslameterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,22 +294,13 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2B44A1A811CA996400B24959 /* TeslameterViewController.xib */ = {
+		23D7CB641729716F0004FF00 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2B44A1CB11CA99A600B24959 /* en */,
+				23D7CB65172971D60004FF00 /* zh-Hans */,
+				23D7CB66172971F10004FF00 /* en */,
 			);
-			name = TeslameterViewController.xib;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		2B44A1AA11CA996F00B24959 /* MainWindow.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2B44A1CC11CA99B500B24959 /* en */,
-			);
-			name = MainWindow.xib;
-			path = ..;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

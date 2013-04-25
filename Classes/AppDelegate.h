@@ -55,6 +55,6 @@ Copyright (C) 2010 Apple Inc. All Rights Reserved.
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet UIViewController *viewController;
+@property (nonatomic, retain) UIViewController *viewController;
 
 @end

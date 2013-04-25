@@ -102,7 +102,7 @@ static EarthQuakeManager *EarthQuakeInterface = nil;
     //Use audio services to play the sound
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
-        AudioServicesPlaySystemSound(soundID);
+        AudioServicesPlayAlertSound(soundID);
     });
     if (delegate && [delegate respondsToSelector:@selector(EQManager:EQLevel:)]) {
         [delegate EQManager:self EQLevel:level];
@@ -112,8 +112,12 @@ static EarthQuakeManager *EarthQuakeInterface = nil;
 - (void)startMotionCheck
 {
     [[self CmManager] startDeviceMotionUpdatesToQueue:[self BgQueue] withHandler:^(CMDeviceMotion *motion, NSError *error) {
-        if (fabs(motion.userAcceleration.x) > 0.1 || fabs(motion.userAcceleration.y) > 0.1 || fabs(motion.userAcceleration.z) > 0.1
-            || fabs(motion.rotationRate.z) > 0.1 || fabs(motion.rotationRate.y) > 0.1 || fabs(motion.rotationRate.x) > 0.1) {
+        if (fabs(motion.userAcceleration.x) > 0.1 ||
+            fabs(motion.userAcceleration.y) > 0.1 ||
+            fabs(motion.userAcceleration.z) > 0.1 ||
+            fabs(motion.rotationRate.z) > 0.1 ||
+            fabs(motion.rotationRate.y) > 0.1 ||
+            fabs(motion.rotationRate.x) > 0.1) {
             //手机处于晃动状态或者转动状态，不检测
             [[NSOperationQueue mainQueue] addOperationWithBlock:^{
                 hasDisturb = YES;
@@ -164,7 +168,6 @@ static EarthQuakeManager *EarthQuakeInterface = nil;
             countAdded = -1;
         });
     }
-    
 }
 
 

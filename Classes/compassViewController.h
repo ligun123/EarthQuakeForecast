@@ -14,6 +14,9 @@
 @interface compassViewController : UIViewController <EarthQuakeManagerProtocol>
 {
     EarthWaveView *waveView;
+    IBOutlet UIImageView *compassImage;
+    IBOutlet UIImageView *waringMaskImage;
+    IBOutlet UILabel *waringLabel;
 }
 
 @property (nonatomic, retain)CLLocationManager *locationManager;
