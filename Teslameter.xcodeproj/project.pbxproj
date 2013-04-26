@@ -29,6 +29,11 @@
 		B27030C71725112F00729BA0 /* compassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B27030C51725112F00729BA0 /* compassViewController.xib */; };
 		B27030CA17251B5A00729BA0 /* EarthWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = B27030C917251B5A00729BA0 /* EarthWaveView.m */; };
 		B27030CC17251EF500729BA0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27030CB17251EF500729BA0 /* QuartzCore.framework */; };
+		B27FA8E4172A939F004B75AD /* compass.png in Resources */ = {isa = PBXBuildFile; fileRef = B27FA8E2172A939F004B75AD /* compass.png */; };
+		B27FA8E5172A939F004B75AD /* compass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B27FA8E3172A939F004B75AD /* compass@2x.png */; };
+		B27FA8E9172A9518004B75AD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B27FA8E6172A9518004B75AD /* Default-568h@2x.png */; };
+		B27FA8EA172A9518004B75AD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B27FA8E7172A9518004B75AD /* Default.png */; };
+		B27FA8EB172A9518004B75AD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B27FA8E8172A9518004B75AD /* Default@2x.png */; };
 		B282B6C717265C6400058556 /* EarthQuakeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B282B6C617265C6400058556 /* EarthQuakeManager.m */; };
 		B282B6C917266CDB00058556 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B282B6C817266CDB00058556 /* AudioToolbox.framework */; };
 		B2833D641727A067000CE101 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2833D631727A067000CE101 /* CoreMotion.framework */; };
@@ -37,7 +42,6 @@
 		B2B8CA4A1729442F00E870DA /* backEarth.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B8CA431729442F00E870DA /* backEarth.png */; };
 		B2B8CA4B1729442F00E870DA /* backEarth2.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B8CA441729442F00E870DA /* backEarth2.png */; };
 		B2B8CA4C1729442F00E870DA /* backWave.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B8CA451729442F00E870DA /* backWave.png */; };
-		B2B8CA4D1729442F00E870DA /* compass1.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B8CA461729442F00E870DA /* compass1.png */; };
 		B2B8CA4E1729442F00E870DA /* compass2.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B8CA471729442F00E870DA /* compass2.png */; };
 		CFC5A65B0FD3E1A3001B9CB3 /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC5A65A0FD3E1A3001B9CB3 /* GraphView.m */; };
 		CFF363450FD4816800BB1137 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF363440FD4816800BB1137 /* Background.png */; };
@@ -48,8 +52,8 @@
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* Teslameter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teslameter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D7CB5E172961500004FF00 /* WaringMask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WaringMask.png; path = Resources/WaringMask.png; sourceTree = "<group>"; };
-		23D7CB65172971D60004FF00 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		23D7CB66172971F10004FF00 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		23D7CB65172971D60004FF00 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		23D7CB66172971F10004FF00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		23D7CB6B172973330004FF00 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		23D7CB6C172973330004FF00 /* TeslameterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TeslameterViewController.xib; sourceTree = "<group>"; };
 		28D7ACF60DDB3853001CB0EB /* TeslameterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeslameterViewController.h; sourceTree = "<group>"; };
@@ -75,6 +79,11 @@
 		B27030C817251B5A00729BA0 /* EarthWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthWaveView.h; sourceTree = "<group>"; };
 		B27030C917251B5A00729BA0 /* EarthWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthWaveView.m; sourceTree = "<group>"; };
 		B27030CB17251EF500729BA0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B27FA8E2172A939F004B75AD /* compass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = compass.png; path = Resources/compass.png; sourceTree = "<group>"; };
+		B27FA8E3172A939F004B75AD /* compass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "compass@2x.png"; path = "Resources/compass@2x.png"; sourceTree = "<group>"; };
+		B27FA8E6172A9518004B75AD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Resources/Default-568h@2x.png"; sourceTree = "<group>"; };
+		B27FA8E7172A9518004B75AD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Default.png; sourceTree = "<group>"; };
+		B27FA8E8172A9518004B75AD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/Default@2x.png"; sourceTree = "<group>"; };
 		B282B6C517265C6400058556 /* EarthQuakeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthQuakeManager.h; sourceTree = "<group>"; };
 		B282B6C617265C6400058556 /* EarthQuakeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthQuakeManager.m; sourceTree = "<group>"; };
 		B282B6C817266CDB00058556 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -84,7 +93,6 @@
 		B2B8CA431729442F00E870DA /* backEarth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backEarth.png; path = Resources/backEarth.png; sourceTree = "<group>"; };
 		B2B8CA441729442F00E870DA /* backEarth2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backEarth2.png; path = Resources/backEarth2.png; sourceTree = "<group>"; };
 		B2B8CA451729442F00E870DA /* backWave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backWave.png; path = Resources/backWave.png; sourceTree = "<group>"; };
-		B2B8CA461729442F00E870DA /* compass1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = compass1.png; path = Resources/compass1.png; sourceTree = "<group>"; };
 		B2B8CA471729442F00E870DA /* compass2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = compass2.png; path = Resources/compass2.png; sourceTree = "<group>"; };
 		CFC5A6590FD3E1A3001B9CB3 /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
 		CFC5A65A0FD3E1A3001B9CB3 /* GraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphView.m; sourceTree = "<group>"; };
@@ -164,13 +172,17 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B27FA8E6172A9518004B75AD /* Default-568h@2x.png */,
+				B27FA8E7172A9518004B75AD /* Default.png */,
+				B27FA8E8172A9518004B75AD /* Default@2x.png */,
+				B27FA8E2172A939F004B75AD /* compass.png */,
+				B27FA8E3172A939F004B75AD /* compass@2x.png */,
 				23D7CB5E172961500004FF00 /* WaringMask.png */,
 				B2B8CA411729442F00E870DA /* alert1.wav */,
 				B2B8CA421729442F00E870DA /* alert2.wav */,
 				B2B8CA431729442F00E870DA /* backEarth.png */,
 				B2B8CA441729442F00E870DA /* backEarth2.png */,
 				B2B8CA451729442F00E870DA /* backWave.png */,
-				B2B8CA461729442F00E870DA /* compass1.png */,
 				B2B8CA471729442F00E870DA /* compass2.png */,
 				2BA881AF11D2D7B300419525 /* iTunesArtwork */,
 				2B44A1E311CA9A8400B24959 /* Icon-72.png */,
@@ -265,12 +277,16 @@
 				B2B8CA4A1729442F00E870DA /* backEarth.png in Resources */,
 				B2B8CA4B1729442F00E870DA /* backEarth2.png in Resources */,
 				B2B8CA4C1729442F00E870DA /* backWave.png in Resources */,
-				B2B8CA4D1729442F00E870DA /* compass1.png in Resources */,
 				B2B8CA4E1729442F00E870DA /* compass2.png in Resources */,
 				23D7CB5F172961500004FF00 /* WaringMask.png in Resources */,
 				23D7CB621729716F0004FF00 /* Localizable.strings in Resources */,
 				23D7CB6D172973330004FF00 /* MainWindow.xib in Resources */,
 				23D7CB6E172973330004FF00 /* TeslameterViewController.xib in Resources */,
+				B27FA8E4172A939F004B75AD /* compass.png in Resources */,
+				B27FA8E5172A939F004B75AD /* compass@2x.png in Resources */,
+				B27FA8E9172A9518004B75AD /* Default-568h@2x.png in Resources */,
+				B27FA8EA172A9518004B75AD /* Default.png in Resources */,
+				B27FA8EB172A9518004B75AD /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
