@@ -46,7 +46,6 @@ Copyright (C) 2010 Apple Inc. All Rights Reserved.
 */
 
 #import "AppDelegate.h"
-#import "TeslameterViewController.h"
 #import "compassViewController.h"
 #import "EarthQuakeManager.h"
 
