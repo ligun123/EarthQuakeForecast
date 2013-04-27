@@ -13,6 +13,7 @@
 @synthesize locationManager;
 @synthesize delegate;
 @synthesize oldHeading;
+@synthesize isBackground, hasPushNotification;
 
 static EarthQuakeManager *EarthQuakeInterface = nil;
 
@@ -50,6 +51,8 @@ static EarthQuakeManager *EarthQuakeInterface = nil;
             AudioServicesCreateSystemSoundID((CFURLRef)filePath, &soundID);
             
             hasDisturb = YES;
+            isBackground = NO;
+            hasPushNotification = NO;
             //加速计
             [self startMotionCheck];
         } else {
@@ -106,6 +109,17 @@ static EarthQuakeManager *EarthQuakeInterface = nil;
     });
     if (delegate && [delegate respondsToSelector:@selector(EQManager:EQLevel:)]) {
         [delegate EQManager:self EQLevel:level];
+    }
+    if (isBackground && !hasPushNotification) {
+        UILocalNotification *notification=[[UILocalNotification alloc] init];
+        if (notification != nil) {
+            NSLog(@">> support local notification");
+            notification.fireDate = [NSDate date];
+            notification.timeZone = [NSTimeZone defaultTimeZone];
+            notification.alertBody = NSLocalizedString(@"EarthQuakeNoti", nil);
+            [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+            hasPushNotification = YES;
+        }
     }
 }
 
@@ -187,3 +201,4 @@ static EarthQuakeManager *EarthQuakeInterface = nil;
 #pragma mark - UIAccelerometerDelegate
 
 @end
+

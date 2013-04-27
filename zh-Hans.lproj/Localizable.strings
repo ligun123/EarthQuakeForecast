@@ -5,4 +5,5 @@
   Created by HalloWorld on 13-4-25.
 
 */
-"EarthQuake" = "预测到地震!";
+"EarthQuake" = "地震!地震!";
+"EarthQuakeNoti" = "警报!警报!预测到地震!";

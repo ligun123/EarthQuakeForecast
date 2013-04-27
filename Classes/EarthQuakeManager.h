@@ -38,11 +38,16 @@
     CMMotionManager *cmManager;
     NSOperationQueue *bgQueue;
     BOOL hasDisturb;
+    
+    BOOL isBackground;
+    BOOL hasPushNotification;
 }
 
 @property (nonatomic, assign)id <EarthQuakeManagerProtocol>delegate;
 @property (nonatomic, retain)CLLocationManager *locationManager;
 @property (nonatomic, retain)CLHeading *oldHeading;
+@property (nonatomic, assign)BOOL isBackground;
+@property (nonatomic, assign)BOOL hasPushNotification;
 
 + (id)shareInterface;
 - (NSMutableArray *)HeadChangeArray;

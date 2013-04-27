@@ -61,6 +61,10 @@ Copyright (C) 2010 Apple Inc. All Rights Reserved.
     [window makeKeyAndVisible];
 }
 
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+}
+
 - (void)dealloc {
     [viewController release];
     [window release];
@@ -71,25 +75,30 @@ Copyright (C) 2010 Apple Inc. All Rights Reserved.
 {
     NSLog(@"%s -> ", __FUNCTION__);
     [[EarthQuakeManager shareInterface] setDelegate:nil];
-}
-
-- (void)applicationWillEnterForeground:(UIApplication *)application
-{
-    NSLog(@"%s -> ", __FUNCTION__);
-    [[EarthQuakeManager shareInterface] setDelegate:viewController];
-}
-
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-    NSLog(@"%s -> ", __FUNCTION__);
-    [[EarthQuakeManager shareInterface] setDelegate:viewController];
+    [[EarthQuakeManager shareInterface] setIsBackground:YES];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     NSLog(@"%s -> ", __FUNCTION__);
     [[EarthQuakeManager shareInterface] setDelegate:nil];
+    [[EarthQuakeManager shareInterface] setIsBackground:YES];
 }
+
+- (void)applicationWillEnterForeground:(UIApplication *)application
+{
+    NSLog(@"%s -> ", __FUNCTION__);
+    [[EarthQuakeManager shareInterface] setDelegate:viewController];
+    [[EarthQuakeManager shareInterface] setIsBackground:NO];
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+    NSLog(@"%s -> ", __FUNCTION__);
+    [[EarthQuakeManager shareInterface] setDelegate:viewController];
+    [[EarthQuakeManager shareInterface] setIsBackground:NO];
+}
+
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
