@@ -90,6 +90,7 @@ Copyright (C) 2010 Apple Inc. All Rights Reserved.
     NSLog(@"%s -> ", __FUNCTION__);
     [[EarthQuakeManager shareInterface] setDelegate:viewController];
     [[EarthQuakeManager shareInterface] setIsBackground:NO];
+    [[EarthQuakeManager shareInterface] setHasPushNotification:NO];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
@@ -97,8 +98,8 @@ Copyright (C) 2010 Apple Inc. All Rights Reserved.
     NSLog(@"%s -> ", __FUNCTION__);
     [[EarthQuakeManager shareInterface] setDelegate:viewController];
     [[EarthQuakeManager shareInterface] setIsBackground:NO];
+    [[EarthQuakeManager shareInterface] setHasPushNotification:NO];
 }
-
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
