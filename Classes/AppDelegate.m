@@ -54,15 +54,19 @@ Copyright (C) 2010 Apple Inc. All Rights Reserved.
 @synthesize window;
 @synthesize viewController;
 
-- (void)applicationDidFinishLaunching:(UIApplication *)application {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     viewController = [[compassViewController alloc] initWithNibName:@"compassViewController" bundle:nil];
     [[EarthQuakeManager shareInterface] setDelegate:viewController];
     window.rootViewController = viewController;
     [window makeKeyAndVisible];
+    return YES;
 }
 
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
 {
+    NSLog(@"%s -> ", __FUNCTION__);
+    [application cancelLocalNotification:notification];
+    [[EarthQuakeManager shareInterface] setHasPushNotification:NO];
 }
 
 - (void)dealloc {
