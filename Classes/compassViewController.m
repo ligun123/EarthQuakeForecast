@@ -43,6 +43,20 @@
     waringLabel.text = NSLocalizedString(@"EarthQuake", nil);
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self layout];
+}
+
+- (void)layout
+{
+    if ([[UIScreen mainScreen] bounds].size.height > 500) {
+        backgroundView.frame = CGRectMake(0, 0, 320, [[UIScreen mainScreen] bounds].size.height);
+        waringMaskImage.frame = CGRectMake(0, 0, 320, [[UIScreen mainScreen] bounds].size.height);
+    }
+}
+
 - (void)tapInView:(UIGestureRecognizer *)gesture
 {
     [waringMaskImage.layer removeAnimationForKey:@"flash"];

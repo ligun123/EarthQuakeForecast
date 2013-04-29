@@ -16,10 +16,12 @@
     EarthWaveView *waveView;
     IBOutlet UIImageView *compassImage;
     IBOutlet UIImageView *waringMaskImage;
+    IBOutlet UIImageView *backgroundView;
     IBOutlet UILabel *waringLabel;
 }
 
 @property (nonatomic, retain)CLLocationManager *locationManager;
 
+- (void)layout;
 
 @end
