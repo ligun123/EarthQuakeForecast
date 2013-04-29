@@ -57,13 +57,26 @@
     [self dismissModalViewControllerAnimated:YES];
 }
 
-- (IBAction)btnEmailFriends:(id)sender
+- (IBAction)btnEmailFriendsTap:(id)sender
 {
     if ([MFMailComposeViewController canSendMail]) {
         MFMailComposeViewController *mailview = [[MFMailComposeViewController alloc] init];
         mailview.mailComposeDelegate = self;
         [mailview setSubject:NSLocalizedString(@"recommend", nil)];
         [mailview setMessageBody:NSLocalizedString(@"recommendBody", nil) isHTML:NO];
+        [self presentModalViewController:mailview animated:YES];
+        [mailview autorelease];
+    }
+}
+
+- (IBAction)btnEmailDevTap:(id)sender
+{
+    if ([MFMailComposeViewController canSendMail]) {
+        MFMailComposeViewController *mailview = [[MFMailComposeViewController alloc] init];
+        mailview.mailComposeDelegate = self;
+        [mailview setToRecipients:[NSArray arrayWithObject:@"li376438624@gmail.com"]];
+        [mailview setSubject:NSLocalizedString(@"feedback", nil)];
+        [mailview setMessageBody:NSLocalizedString(@"feedbackBody", nil) isHTML:NO];
         [self presentModalViewController:mailview animated:YES];
         [mailview autorelease];
     }

@@ -25,7 +25,7 @@
 		2B44A1ED11CA9A8400B24959 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B44A1E611CA9A8400B24959 /* Icon-Small@2x.png */; };
 		2B44A1EE11CA9A8400B24959 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B44A1E711CA9A8400B24959 /* Icon.png */; };
 		2B44A1EF11CA9A8400B24959 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B44A1E811CA9A8400B24959 /* Icon@2x.png */; };
-		2BA881B011D2D7B300419525 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 2BA881AF11D2D7B300419525 /* iTunesArtwork */; };
+		2BA881B011D2D7B300419525 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BA881AF11D2D7B300419525 /* iTunesArtwork.png */; };
 		B27030C61725112F00729BA0 /* compassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27030C41725112F00729BA0 /* compassViewController.m */; };
 		B27030C71725112F00729BA0 /* compassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B27030C51725112F00729BA0 /* compassViewController.xib */; };
 		B27030CA17251B5A00729BA0 /* EarthWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = B27030C917251B5A00729BA0 /* EarthWaveView.m */; };
@@ -69,7 +69,7 @@
 		2B44A1E611CA9A8400B24959 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "Resources/Icon-Small@2x.png"; sourceTree = "<group>"; };
 		2B44A1E711CA9A8400B24959 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Resources/Icon.png; sourceTree = "<group>"; };
 		2B44A1E811CA9A8400B24959 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Resources/Icon@2x.png"; sourceTree = "<group>"; };
-		2BA881AF11D2D7B300419525 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; name = iTunesArtwork; path = Resources/iTunesArtwork; sourceTree = "<group>"; };
+		2BA881AF11D2D7B300419525 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunesArtwork.png; path = Resources/iTunesArtwork.png; sourceTree = "<group>"; };
 		30385B690FFC024D006C2CD2 /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Teslameter_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teslameter_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Teslameter-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Teslameter-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -181,7 +181,7 @@
 				B2B8CA441729442F00E870DA /* backEarth2.png */,
 				B2B8CA451729442F00E870DA /* backWave.png */,
 				B2B8CA471729442F00E870DA /* compass2.png */,
-				2BA881AF11D2D7B300419525 /* iTunesArtwork */,
+				2BA881AF11D2D7B300419525 /* iTunesArtwork.png */,
 				2B44A1E311CA9A8400B24959 /* Icon-72.png */,
 				2B44A1E411CA9A8400B24959 /* Icon-Small-50.png */,
 				2B44A1E511CA9A8400B24959 /* Icon-Small.png */,
@@ -265,7 +265,7 @@
 				2B44A1ED11CA9A8400B24959 /* Icon-Small@2x.png in Resources */,
 				2B44A1EE11CA9A8400B24959 /* Icon.png in Resources */,
 				2B44A1EF11CA9A8400B24959 /* Icon@2x.png in Resources */,
-				2BA881B011D2D7B300419525 /* iTunesArtwork in Resources */,
+				2BA881B011D2D7B300419525 /* iTunesArtwork.png in Resources */,
 				B27030C71725112F00729BA0 /* compassViewController.xib in Resources */,
 				B2B8CA481729442F00E870DA /* alert1.wav in Resources */,
 				B2B8CA491729442F00E870DA /* alert2.wav in Resources */,

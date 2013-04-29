@@ -20,10 +20,14 @@
     
     IBOutlet UIButton *btnEmailDev;
 }
+
+
 - (IBAction)mgSwitchTap:(id)sender;
 
 - (IBAction)btnBackTap:(id)sender;
 
-- (IBAction)btnEmailFriends:(id)sender;
+- (IBAction)btnEmailFriendsTap:(id)sender;
+
+- (IBAction)btnEmailDevTap:(id)sender;
 
 @end
