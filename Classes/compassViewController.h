@@ -22,6 +22,8 @@
 
 @property (nonatomic, retain)CLLocationManager *locationManager;
 
+- (IBAction)btnInfoTap:(id)sender;
+
 - (void)layout;
 
 @end

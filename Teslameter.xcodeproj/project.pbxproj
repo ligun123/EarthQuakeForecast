@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		23366100172E61EC00EBA021 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 233660FE172E61EC00EBA021 /* InfoViewController.m */; };
+		23366101172E61EC00EBA021 /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 233660FF172E61EC00EBA021 /* InfoViewController.xib */; };
+		23366105172E6E2700EBA021 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23366104172E6E2700EBA021 /* MessageUI.framework */; };
 		23D7CB5F172961500004FF00 /* WaringMask.png in Resources */ = {isa = PBXBuildFile; fileRef = 23D7CB5E172961500004FF00 /* WaringMask.png */; };
 		23D7CB621729716F0004FF00 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23D7CB641729716F0004FF00 /* Localizable.strings */; };
 		23D7CB6D172973330004FF00 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23D7CB6B172973330004FF00 /* MainWindow.xib */; };
@@ -41,13 +44,16 @@
 		B2B8CA4B1729442F00E870DA /* backEarth2.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B8CA441729442F00E870DA /* backEarth2.png */; };
 		B2B8CA4C1729442F00E870DA /* backWave.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B8CA451729442F00E870DA /* backWave.png */; };
 		B2B8CA4E1729442F00E870DA /* compass2.png in Resources */ = {isa = PBXBuildFile; fileRef = B2B8CA471729442F00E870DA /* compass2.png */; };
-		CFF363450FD4816800BB1137 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF363440FD4816800BB1137 /* Background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* Teslameter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teslameter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		233660FD172E61EC00EBA021 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		233660FE172E61EC00EBA021 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		233660FF172E61EC00EBA021 /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
+		23366104172E6E2700EBA021 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		23D7CB5E172961500004FF00 /* WaringMask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WaringMask.png; path = Resources/WaringMask.png; sourceTree = "<group>"; };
 		23D7CB65172971D60004FF00 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		23D7CB66172971F10004FF00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -88,7 +94,6 @@
 		B2B8CA441729442F00E870DA /* backEarth2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backEarth2.png; path = Resources/backEarth2.png; sourceTree = "<group>"; };
 		B2B8CA451729442F00E870DA /* backWave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backWave.png; path = Resources/backWave.png; sourceTree = "<group>"; };
 		B2B8CA471729442F00E870DA /* compass2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = compass2.png; path = Resources/compass2.png; sourceTree = "<group>"; };
-		CFF363440FD4816800BB1137 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Background.png; path = Resources/Background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23366105172E6E2700EBA021 /* MessageUI.framework in Frameworks */,
 				B2833D641727A067000CE101 /* CoreMotion.framework in Frameworks */,
 				B282B6C917266CDB00058556 /* AudioToolbox.framework in Frameworks */,
 				B27030CC17251EF500729BA0 /* QuartzCore.framework in Frameworks */,
@@ -122,6 +128,9 @@
 				B282B6C617265C6400058556 /* EarthQuakeManager.m */,
 				B27030C817251B5A00729BA0 /* EarthWaveView.h */,
 				B27030C917251B5A00729BA0 /* EarthWaveView.m */,
+				233660FD172E61EC00EBA021 /* InfoViewController.h */,
+				233660FE172E61EC00EBA021 /* InfoViewController.m */,
+				233660FF172E61EC00EBA021 /* InfoViewController.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -159,6 +168,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				23D7CB641729716F0004FF00 /* Localizable.strings */,
 				B27FA8E6172A9518004B75AD /* Default-568h@2x.png */,
 				B27FA8E7172A9518004B75AD /* Default.png */,
 				B27FA8E8172A9518004B75AD /* Default@2x.png */,
@@ -178,9 +188,7 @@
 				2B44A1E611CA9A8400B24959 /* Icon-Small@2x.png */,
 				2B44A1E711CA9A8400B24959 /* Icon.png */,
 				2B44A1E811CA9A8400B24959 /* Icon@2x.png */,
-				CFF363440FD4816800BB1137 /* Background.png */,
 				8D1107310486CEB800E47090 /* Teslameter-Info.plist */,
-				23D7CB641729716F0004FF00 /* Localizable.strings */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -188,6 +196,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				23366104172E6E2700EBA021 /* MessageUI.framework */,
 				B2833D631727A067000CE101 /* CoreMotion.framework */,
 				B282B6C817266CDB00058556 /* AudioToolbox.framework */,
 				B27030CB17251EF500729BA0 /* QuartzCore.framework */,
@@ -250,7 +259,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFF363450FD4816800BB1137 /* Background.png in Resources */,
 				2B44A1EA11CA9A8400B24959 /* Icon-72.png in Resources */,
 				2B44A1EB11CA9A8400B24959 /* Icon-Small-50.png in Resources */,
 				2B44A1EC11CA9A8400B24959 /* Icon-Small.png in Resources */,
@@ -273,6 +281,7 @@
 				B27FA8E9172A9518004B75AD /* Default-568h@2x.png in Resources */,
 				B27FA8EA172A9518004B75AD /* Default.png in Resources */,
 				B27FA8EB172A9518004B75AD /* Default@2x.png in Resources */,
+				23366101172E61EC00EBA021 /* InfoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +297,7 @@
 				B27030C61725112F00729BA0 /* compassViewController.m in Sources */,
 				B27030CA17251B5A00729BA0 /* EarthWaveView.m in Sources */,
 				B282B6C717265C6400058556 /* EarthQuakeManager.m in Sources */,
+				23366100172E61EC00EBA021 /* InfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +327,7 @@
 				GCC_PREFIX_HEADER = Teslameter_Prefix.pch;
 				INFOPLIST_FILE = "Teslameter-Info.plist";
 				PRODUCT_NAME = Teslameter;
+				SDKROOT = iphoneos;
 				VALID_ARCHS = "armv6 armv7";
 			};
 			name = Debug;
@@ -330,6 +341,7 @@
 				GCC_PREFIX_HEADER = Teslameter_Prefix.pch;
 				INFOPLIST_FILE = "Teslameter-Info.plist";
 				PRODUCT_NAME = Teslameter;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -351,12 +363,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				PREBINDING = NO;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos4.0;
 			};
 			name = Release;

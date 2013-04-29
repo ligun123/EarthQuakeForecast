@@ -5,5 +5,11 @@
   Created by HalloWorld on 13-4-25.
 
 */
-"EarthQuake" = "Earthquake will come!";
+"EarthQuake" = "Earthquake!";
 "EarthQuakeNoti" = "Waring,Earthquake will come!";
+"Sensitivity" = "Sensitivity";
+"btnBack" = "Back";
+"recommend" = "Recommend";
+"recommendBody" = "recommendBody";
+"btnEmailFriends" = "Tell Friends";
+"btnEmailDev" = "Feedback";

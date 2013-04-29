@@ -7,3 +7,9 @@
 */
 "EarthQuake" = "地震!地震!";
 "EarthQuakeNoti" = "警报!警报!预测到地震!";
+"Sensitivity" = "敏感";
+"btnBack" = "返回";
+"recommend" = "APP推荐";
+"recommendBody" = "APP推荐内容";
+"btnEmailFriends" = "告诉朋友";
+"btnEmailDev" = "反馈给开发者";

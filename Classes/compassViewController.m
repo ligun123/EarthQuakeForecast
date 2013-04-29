@@ -9,6 +9,7 @@
 #import "compassViewController.h"
 #import "EarthWaveView.h"
 #import <QuartzCore/QuartzCore.h>
+#import "InfoViewController.h"
 
 @implementation compassViewController
 
@@ -33,7 +34,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    waveView = [[EarthWaveView alloc] initWithFrame:CGRectMake(0, 50, 320, 200)];
+    waveView = [[EarthWaveView alloc] initWithFrame:CGRectMake(0, 30, 320, 150)];
     [self.view addSubview:waveView];
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapInView:)];
@@ -55,6 +56,15 @@
         backgroundView.frame = CGRectMake(0, 0, 320, [[UIScreen mainScreen] bounds].size.height);
         waringMaskImage.frame = CGRectMake(0, 0, 320, [[UIScreen mainScreen] bounds].size.height);
     }
+}
+
+- (IBAction)btnInfoTap:(id)sender
+{
+    InfoViewController *info = [[InfoViewController alloc] initWithNibName:@"InfoViewController" bundle:nil];
+    info.modalPresentationStyle = UIModalPresentationFullScreen;
+    info.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentModalViewController:info animated:YES];
+    [info autorelease];
 }
 
 - (void)tapInView:(UIGestureRecognizer *)gesture

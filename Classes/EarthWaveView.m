@@ -37,10 +37,13 @@
     NSMutableArray *array = [[EarthQuakeManager shareInterface] HeadChangeArray];
     float height = self.frame.size.height;
     [[UIColor redColor] set];
-    CGContextMoveToPoint(UIGraphicsGetCurrentContext(), 0, height/2);
+    if ([array count] > 0) {
+        CGContextMoveToPoint(UIGraphicsGetCurrentContext(), 0, height - [[array objectAtIndex:0] floatValue]);
+    }
+    
     for (int i = 0; i < [array count]; i ++) {
         float f = [[array objectAtIndex:i] floatValue];
-        CGPoint p = CGPointMake(i,f+height/2);
+        CGPoint p = CGPointMake(i*2,height - f);
         CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), p.x, p.y);
     }
     

@@ -12,8 +12,8 @@
 @implementation EarthQuakeManager
 @synthesize locationManager;
 @synthesize delegate;
-@synthesize oldHeading;
 @synthesize isBackground, hasPushNotification;
+@synthesize oldMagnetometerData;
 
 static EarthQuakeManager *EarthQuakeInterface = nil;
 
@@ -101,9 +101,7 @@ static EarthQuakeManager *EarthQuakeInterface = nil;
 
 - (void)earthQuakeAlertLevel:(NSInteger)level
 {
-    NSLog(@"%s -> ", __FUNCTION__);
     //Use audio services to play the sound
-    
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
         AudioServicesPlayAlertSound(soundID);
     });
@@ -126,12 +124,13 @@ static EarthQuakeManager *EarthQuakeInterface = nil;
 - (void)startMotionCheck
 {
     [[self CmManager] startDeviceMotionUpdatesToQueue:[self BgQueue] withHandler:^(CMDeviceMotion *motion, NSError *error) {
-        if (fabs(motion.userAcceleration.x) > 0.1 ||
-            fabs(motion.userAcceleration.y) > 0.1 ||
-            fabs(motion.userAcceleration.z) > 0.1 ||
-            fabs(motion.rotationRate.z) > 0.1 ||
-            fabs(motion.rotationRate.y) > 0.1 ||
-            fabs(motion.rotationRate.x) > 0.1) {
+        
+        if (fabs(motion.userAcceleration.x) > floatDisturbKey ||
+            fabs(motion.userAcceleration.y) > floatDisturbKey ||
+            fabs(motion.userAcceleration.z) > floatDisturbKey ||
+            fabs(motion.rotationRate.z) > floatDisturbKey ||
+            fabs(motion.rotationRate.y) > floatDisturbKey ||
+            fabs(motion.rotationRate.x) > floatDisturbKey) {
             //手机处于晃动状态或者转动状态，不检测
             [[NSOperationQueue mainQueue] addOperationWithBlock:^{
                 hasDisturb = YES;
@@ -142,16 +141,22 @@ static EarthQuakeManager *EarthQuakeInterface = nil;
             }];
         }
     }];
+    
+    
+    [[self CmManager] setMagnetometerUpdateInterval:1/10.0];
+    [[self CmManager] startMagnetometerUpdatesToQueue:[NSOperationQueue mainQueue] withHandler:^(CMMagnetometerData *magnetometerData, NSError *error) {
+        [self addNewMagnetometer:magnetometerData];
+    }];
 }
 
-- (void)addNewHeading:(CLHeading *)heading
+- (void)addNewMagnetometer:(CMMagnetometerData *)magneticData
 {
     if ([headChangeArray count] >= MaxHeadPoints) {
         [headChangeArray removeObjectAtIndex:0];
     }
-    float change = oldHeading.magneticHeading - heading.magneticHeading;
-    self.oldHeading = heading;
+    float change = [self averageChange:magneticData];
     [headChangeArray addObject:[NSNumber numberWithFloat:change]];
+    self.oldMagnetometerData = magneticData;
     if (hasDisturb) {
         countAdded = -1;
         return;
@@ -172,22 +177,28 @@ static EarthQuakeManager *EarthQuakeInterface = nil;
                 sum += (NSUInteger)fabs([[headChangeArray objectAtIndex:count -i] floatValue]);
             }
             NSInteger level = sum / MaxUsedCount;
-            if (level >= averageQuakeKey) {
+            NSInteger key = ([[NSUserDefaults standardUserDefaults] boolForKey:kBoolMGSwitchState]) ? averageQuakeKeyHight : averageQuakeKey;
+            if (level >= key) {
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [[EarthQuakeManager shareInterface] earthQuakeAlertLevel:level];
                 });
-            } else {
-                NSLog(@"%s -> Safe : %d", __FUNCTION__, level);
             }
+            NSLog(@"%s -> level : %d", __FUNCTION__, level);
             countAdded = -1;
         });
     }
 }
 
+- (float)averageChange:(CMMagnetometerData *)magneticData
+{
+    float ax = fabsf(oldMagnetometerData.magneticField.x - magneticData.magneticField.x);
+    float ay = fabsf(oldMagnetometerData.magneticField.y - magneticData.magneticField.y);
+    float az = fabsf(oldMagnetometerData.magneticField.z - magneticData.magneticField.z);
+    return sqrtf(ax*ax + ay*ay + az*az)/ 3.0;
+}
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
 {
-    [self addNewHeading:newHeading];
     if (delegate && [delegate respondsToSelector:@selector(EQManager:updatingHeading:)]) {
         [delegate EQManager:self updatingHeading:newHeading];
     }

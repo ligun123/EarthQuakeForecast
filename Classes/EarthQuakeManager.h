@@ -11,10 +11,15 @@
 #import <AudioToolbox/AudioToolbox.h>
 #import <CoreMotion/CoreMotion.h>
 
-#define averageQuakeKey 1
-#define MaxHeadPoints 320
-#define MaxUsedCount 180
+#define averageQuakeKey 3
+#define averageQuakeKeyHight 1
+#define MaxHeadPoints 160
+#define MaxUsedCount 50
 #define CMMotionUpdateInterval 1.0/10
+#define kBoolMGSwitchState @"kBoolMGSwitchState"
+
+#define floatDisturbKey 0.2
+#define floatDisturbKeyHight 0.2
 
 @class EarthQuakeManager;
 
@@ -45,13 +50,16 @@
 
 @property (nonatomic, assign)id <EarthQuakeManagerProtocol>delegate;
 @property (nonatomic, retain)CLLocationManager *locationManager;
-@property (nonatomic, retain)CLHeading *oldHeading;
 @property (nonatomic, assign)BOOL isBackground;
 @property (nonatomic, assign)BOOL hasPushNotification;
+@property (nonatomic, retain)CMMagnetometerData *oldMagnetometerData;
 
 + (id)shareInterface;
+
+//原始磁场数据变化
 - (NSMutableArray *)HeadChangeArray;
-- (void)addNewHeading:(CLHeading *)heading;
+- (void)addNewMagnetometer:(CMMagnetometerData *)magneticData;
+- (float)averageChange:(CMMagnetometerData *)magneticData;
 
 - (void)startMotionCheck;
 - (CMMotionManager *)CmManager;
